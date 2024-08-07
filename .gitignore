@@ -2,3 +2,5 @@ Pipefiles.lock
 
 instance/
 test/
+
+*.swp
