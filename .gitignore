@@ -1,6 +1,6 @@
-Pipefile.lock
 
 instance/
 test/
+Pipfile.lock
 
 *.swp
