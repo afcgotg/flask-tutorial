@@ -81,13 +81,13 @@ def load_logged_in_user():
 
 @bp.route('/logout')
 def logout():
-	sesion.clear()
+	session.clear()
 	return redirect(url_for('index'))
 
 
 def login_required(view):
 	@functools.wraps(view)
-	def wrapper_view(**kwargs):
+	def wrapped_view(**kwargs):
 		if g.user is None:
 			return redirect(url_for('auth.login'))
 
